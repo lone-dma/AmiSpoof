@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - master
-    paths:
-      - 'src/**'
   workflow_dispatch:
 
 permissions:
@@ -37,7 +35,7 @@ jobs:
 
       - name: Dotnet Publish
         run: |
-          dotnet publish LoneSpoof.csproj `
+          dotnet publish src/LoneSpoof.csproj `
             -c Release `
             -r win-x64 `
             --self-contained `
