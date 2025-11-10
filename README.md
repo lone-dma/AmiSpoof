@@ -20,7 +20,6 @@ It's basic but it's free :)
   - Usually this is easy to spoof since most drivers allow you to change this directly in Network Connections.
 
 # Instructions
-- Build the tool (Right-Click Project -> Publish -> Self-Contained/win-x64)
 - Run the tool on the PC you want to spoof and follow the prompts.
 - Save the 'Originals' json file in case you need to revert back to your original values.
 - After successful spoof, Re-Flash your BIOS, and Re-Install Windows
