@@ -37,7 +37,7 @@ jobs:
 
       - name: Dotnet Publish
         run: |
-          dotnet publish LoneSpoof.csproj `
+          dotnet publish src/LoneSpoof.csproj `
             -c Release `
             -r win-x64 `
             --self-contained `
