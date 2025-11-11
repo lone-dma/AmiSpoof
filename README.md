@@ -22,7 +22,7 @@ It's basic but it's free :)
    1. [Create Windows Installation Media](https://support.microsoft.com/windows/create-installation-media-for-windows-99a58364-8c02-206f-aa6f-40c3b507420d)
    1. [Massgrave Microsoft Activation Scripts (to activate Windows)](https://massgrave.dev/)
 3. Spoof Disk Serials:
-   1. ✅ Best option is **RAID 0**. [RAID 0 Guide (Gigabyte)](https://download.gigabyte.com/FileList/Manual/mb_manual_intel700series-raid_e.pdf)
+   1. ✅ Best option is **RAID 0** (Requires Windows Re-Install). [RAID 0 Guide (Gigabyte)](https://download.gigabyte.com/FileList/Manual/mb_manual_intel700series-raid_e.pdf)
    1. ❌ [VolumeId](https://learn.microsoft.com/sysinternals/downloads/volumeid) just changes your Volume Serial (set randomly when your drive is formatted), and is useless.
 4. Spoof MAC Address:
    1. ✅ Change it directly in **Network Connections**.
