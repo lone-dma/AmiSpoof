@@ -13,7 +13,7 @@ It's basic but it's free :)
 ## Limitations
 - Only works on Motherboards with AMI BIOS.
   - Will not work on ASUS motherboards (surprise surprise)
-- Will not fix your Disk Serials
+- Will not fix your Disk Serials.
   - ✅ Best option is **RAID 0**. [RAID 0 Guide (Gigabyte)](https://download.gigabyte.com/FileList/Manual/mb_manual_intel700series-raid_e.pdf)
   - ❌ VolumeId just changes your Volume Serial (set randomly when your drive is formatted), and is useless.
 - Will not fix your MAC Address.
@@ -24,9 +24,9 @@ It's basic but it's free :)
 
 # Instructions
 - Run the tool on the PC you want to spoof and follow the prompts.
-- After successful spoof, Re-Flash your BIOS, and Re-Install Windows
+- After successful spoof, Re-Flash your BIOS, and Re-Install Windows.
   - There are some other tools that clear traces, but there are a million and I can't be bothered to do them all. Reinstalling Windows is a better way to clear traces anyway.
 - Save the generated Logfile in case you need to revert back to your original values.
  
 # Support
-As-Is, no support. But if you see anything that I should change/look at feel free to let me know :)
+This is released **AS-IS** and there is no support. But if I need to change something or you have a suggestion just let me know.
