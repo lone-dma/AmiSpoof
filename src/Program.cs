@@ -31,10 +31,10 @@ namespace LoneSpoof
                 AnsiConsole.Write(new Rule().RuleStyle("grey").Centered());
                 AnsiConsole.WriteLine();
                 // Startup Amidewin and get current values
-                AnsiConsole.MarkupLine("[bold green]Initializing Amidewin...[/]");
-                Amidewin.Init();
-                AnsiConsole.MarkupLine("[bold green]Amidewin initialized successfully.[/]");
-                AnsiConsole.MarkupLine("[bold green]Retrieving BIOS values...[/]");
+                AnsiConsole.MarkupLine("[bold green]Preparing AMIDEWIN...[/]");
+                Amidewin.Prepare();
+                AnsiConsole.MarkupLine("[bold green]Ready![/]");
+                AnsiConsole.MarkupLine("[bold green]Retrieving SMBIOS...[/]");
                 var keys = new List<AmidewinKeyValuePair>();
                 foreach (var descriptor in Amidewin.Descriptors)
                 {
@@ -64,7 +64,7 @@ namespace LoneSpoof
                 }
 
                 // Show all changed values and confirm
-                AnsiConsole.MarkupLine("[bold underline]Summary of Changes:[/]\n");
+                AnsiConsole.MarkupLine("[bold underline]Summary of Planned Changes:[/]\n");
                 foreach (var key in keys)
                 {
                     key.PrintChange();
@@ -72,7 +72,7 @@ namespace LoneSpoof
                 AnsiConsole.WriteLine();
                 AnsiConsole.MarkupLine("[blue]Check the values above and make sure everything looks good.[/]");
                 AnsiConsole.MarkupLine("[grey]If there are problems open an Issue on GitHub, and I'll try to take a look at it.[/]");
-                bool confirm = AnsiConsole.Confirm("Do you want to proceed with these values?");
+                bool confirm = AnsiConsole.Confirm("Do you want to proceed with these SMBIOS changes?");
                 if (!confirm)
                 {
                     AnsiConsole.MarkupLine("[red]Operation cancelled by user.[/]");
@@ -87,7 +87,7 @@ namespace LoneSpoof
 
                 // Begin spoofing
                 AnsiConsole.WriteLine();
-                AnsiConsole.MarkupLine("[bold green]Proceeding with spoofed values...[/]");
+                AnsiConsole.MarkupLine("[bold green]Spoofing...[/]");
                 foreach (var key in keys)
                 {
                     key.Spoof();

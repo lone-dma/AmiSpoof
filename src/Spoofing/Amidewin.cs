@@ -212,7 +212,7 @@ namespace LoneSpoof.Spoofing
         };
 
 
-        public static void Init()
+        public static void Prepare()
         {
             try
             {
@@ -224,7 +224,7 @@ namespace LoneSpoof.Spoofing
             }
             catch (Exception ex)
             {
-                throw new InvalidOperationException("Failed to initialize AMIDEWIN", ex);
+                throw new InvalidOperationException("Failed to prepare AMIDEWIN", ex);
             }
         }
 
