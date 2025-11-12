@@ -1,4 +1,4 @@
-using LoneSpoof.Misc;
+﻿using LoneSpoof.Misc;
 using LoneSpoof.Spoofing;
 using Spectre.Console;
 using System.Reflection;
@@ -33,11 +33,12 @@ namespace LoneSpoof
                 AnsiConsole.MarkupLine("[bold green]Preparing AMIDEWIN...[/]");
                 Amidewin.Prepare();
                 AnsiConsole.MarkupLine("[bold green]Ready![/]");
-                AnsiConsole.MarkupLine("[bold green]Retrieving SMBIOS...[/]");
+                AnsiConsole.MarkupLine("[bold green]Retrieving SMBIOS (This may take a moment)...[/]");
                 var keys = new List<AmidewinKeyValuePair>();
                 foreach (var descriptor in Amidewin.Descriptors)
                 {
                     keys.Add(Amidewin.GetValue(descriptor.Key));
+                    AnsiConsole.MarkupLine($"[bold green]✅ {Markup.Escape(descriptor.Value.Name)}[/]");
                 }
 
                 // Confirm new values with user
