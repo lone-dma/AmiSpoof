@@ -33,4 +33,19 @@
     <PackageReference Include="Spectre.Console" Version="0.53.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="GetHardwareIds.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Scripts\Get-HardwareIds.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Scripts\Set-RandomMacAddress.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SpoofMAC.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
