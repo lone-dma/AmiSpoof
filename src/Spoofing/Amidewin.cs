@@ -159,55 +159,6 @@ namespace LoneSpoof.Spoofing
                 Name = "System Configuration Option #1",
                 Description = "A system configuration option field defined by the OEM.",
                 DefaultSpoofedValue = "Default string"
-            },
-            ["/PL"] = new AmidewinKeyDescriptor
-            {
-                Key = "/PL",
-                Name = "Power Location",
-                Description = "The location of the system power supply.",
-                DefaultSpoofedValue = "To Be Filled By O.E.M."
-            },
-            ["/PD"] = new AmidewinKeyDescriptor
-            {
-                Key = "/PD",
-                Name = "Power Device Name",
-                Description = "The name or identifier of the power supply device.",
-                DefaultSpoofedValue = "To Be Filled By O.E.M."
-            },
-            ["/PM"] = new AmidewinKeyDescriptor
-            {
-                Key = "/PM",
-                Name = "Power Manufacturer",
-                Description = "The manufacturer of the power supply.",
-                DefaultSpoofedValue = "To Be Filled By O.E.M."
-            },
-            ["/PS"] = new AmidewinKeyDescriptor
-            {
-                Key = "/PS",
-                Name = "Power Serial Number",
-                Description = "The serial number assigned to the power supply.",
-                DefaultSpoofedValue = "To Be Filled By O.E.M."
-            },
-            ["/PT"] = new AmidewinKeyDescriptor
-            {
-                Key = "/PT",
-                Name = "Power Asset Tag",
-                Description = "The asset tag number of the power supply.",
-                DefaultSpoofedValue = "To Be Filled By O.E.M."
-            },
-            ["/PN"] = new AmidewinKeyDescriptor
-            {
-                Key = "/PN",
-                Name = "Power Model / Part Number",
-                Description = "The model or part number of the power supply.",
-                DefaultSpoofedValue = "To Be Filled By O.E.M."
-            },
-            ["/PR"] = new AmidewinKeyDescriptor
-            {
-                Key = "/PR",
-                Name = "Power Revision Level",
-                Description = "The revision level of the power supply.",
-                DefaultSpoofedValue = "To Be Filled By O.E.M."
             }
         };
 
